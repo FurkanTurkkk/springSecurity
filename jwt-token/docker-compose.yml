@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: furkan-db
+    environment:
+      MYSQL_ROOT_PASSWORD: 123321
+      MYSQL_DATABASE: furkan-db
+      MYSQL_USER: furkan
+      MYSQL_PASSWORD: 123321
+    ports:
+      - '3306:3306'
